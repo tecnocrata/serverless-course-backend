@@ -39,7 +39,7 @@ export function main(event, context, callback) {
       const response = {
         statusCode: 500,
         headers: headers,
-        body: JSON.stringify({ status: false })
+        body: JSON.stringify({ status: false, error }) //Using error in the body was not part of the course, it was my idea in order to get more error info
       };
       callback(null, response);
       return;

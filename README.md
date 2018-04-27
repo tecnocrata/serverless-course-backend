@@ -73,6 +73,12 @@ $ npm install
 
 ### Usage
 
+To run single test using mocks
+
+``` bash
+$ AWS_PROFILE=personal serverless invoke local --function create --path mocks/create-event.json
+```
+
 To run unit tests on your local
 
 ``` bash
